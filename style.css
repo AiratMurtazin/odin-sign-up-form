@@ -5,11 +5,12 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Oswald', sans-serif;
+	overflow-x: hidden;
 }
 
 .container {
 	display: flex;
-	/* width: 100vw; */
+	width: 100vw;
 }
 
 .logo-side {
@@ -41,10 +42,34 @@
 	letter-spacing: 0.1rem;
 }
 
+.warning {
+	margin: 10% 6% 6% 6%;
+}
 .sign-up-side {
 	width: 65vw;
 	height: 100vh;
-	padding: 6%;
+	/* padding: 6%; */
 	background-color: #e9e9e9;
 	z-index: -1;
+}
+
+label {
+	display: block;
+	color: #c0c0c0;
+}
+
+.form {
+	background-color: #fff;
+	width: 100%;
+	padding: 3% 6%;
+}
+
+.inputs-container {
+	display: grid;
+	grid-template-areas: 'fn lm';
+	width: 100%;
+}
+
+.inp {
+	padding: 1%;
 }
