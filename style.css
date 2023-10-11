@@ -20,6 +20,7 @@
 	background-size: cover;
 	box-shadow: 7px 2px 20px 5px #0000008a;
 	z-index: 2;
+	position: relative;
 }
 
 .logo {
@@ -59,19 +60,19 @@ label {
 
 .white_wrapper {
 	background-color: #fff;
-	width: 100%;
+	width: 87%;
 	padding: 3% 6%;
-	box-shadow: 1px 5px 28px 9px rgba(0, 0, 0, 0.64);
+	box-shadow: 1px 5px 28px -8px rgba(0, 0, 0, 0.64);
 }
 
 .inputs-container {
 	display: grid;
-	grid-template-areas: 'fn lm';
-	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	width: 65%;
 }
 
 input {
-	width: 50%;
+	width: 80%;
 }
 
 input:focus {
@@ -113,4 +114,16 @@ input:focus {
 
 .haveAcc span {
 	color: #757575;
+}
+
+.author {
+	color: #fff;
+	font-size: 0.8rem;
+	position: absolute;
+	bottom: 1rem;
+	left: 35%;
+}
+
+.author a {
+	color: #fff;
 }
