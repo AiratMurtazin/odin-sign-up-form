@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	/* width: 100vw; */
+}
+
+.logo-side {
+	width: 32vw;
+	height: 100vh;
+	background-image: url(bg-image.jpg);
+	background-size: cover;
+}
+
+.sign-up-side {
+	width: 68vw;
+	height: 100vh;
+}
