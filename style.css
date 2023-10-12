@@ -127,3 +127,7 @@ input:focus {
 .author a {
 	color: #fff;
 }
+
+.error {
+	border: 1px solid red;
+}

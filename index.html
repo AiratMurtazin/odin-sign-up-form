@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
 		<title>Sign-up form</title>
 	</head>
 	<body>
@@ -35,7 +36,7 @@
 					Sign up <i>now</i> to get started. <br /><br />
 					You know you want to.
 				</h2>
-				<form class="form" action="#">
+				<form class="form" id="form" action="#">
 					<div class="white_wrapper">
 						<h3 class="form-hd">Let's do this!</h3>
 						<div class="inputs-container">
@@ -72,6 +73,7 @@
 									id="phone"
 									name="phone"
 									pattern="[78][0-9]{9}"
+									maxlength="10"
 									required
 								/>
 							</div>
@@ -82,7 +84,8 @@
 									id="password"
 									name="password"
 									required
-									minlength="6"
+									title="Must be at least 6 characters including capital letters and numbers"
+									pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$"
 								/>
 							</div>
 							<div class="inp confirm_password">
@@ -92,6 +95,7 @@
 									id="confirm-password"
 									name="confirm-password"
 									pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$"
+									title="Must be at least 6 characters including capital letters and numbers"
 									required
 								/>
 							</div>
